@@ -1,39 +1,13 @@
 ---
 // Component Imports
 import Counter from "../components/Counter.svelte";
-import Header from "../components/Header.astro";
+import Main from "../layouts/Main.astro";
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 
-		<title>Whisperstorm</title>
-	</head>
-	<body>
-		<!-- 
-		<header>
-			<h1>Whisperstorm</h1>
-		</header>
-		<main>
-			<Counter client:visible>
-				<h1>Svelte</h1>
-			</Counter>
-		</main>
-		<a href="/test">test link</a>
-	-->
-
-  <Header />
-		<main>
-
+<Main>
 Testing: <a href="/test">Testing</a>
-		</main>
-
-	</body>
-</html>
+</Main>
