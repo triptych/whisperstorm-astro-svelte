@@ -1,18 +1,19 @@
 {
-  "name": "@example/framework-svelte",
+  "name": "@example/basics",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --experimental-integrations --port 3001 --host 0.0.0.0",
     "start": "astro dev --host 0.0.0.0",
-    "build": "astro build",
-    "preview": "astro preview"
-  },
-  "devDependencies": {
-    "@astrojs/svelte": "^0.4.0",
-    "astro": "^1.0.0-beta.72"
+    "build": "astro build --experimental-integrations",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "svelte": "^3.48.0"
+    "astro": "^1.1.5"
+  },
+  "devDependencies": {
+    "@astrojs/svelte": "^1.0.0",
+    "svelte": "^3.50.0"
   }
 }
