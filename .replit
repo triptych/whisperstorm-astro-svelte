@@ -2,3 +2,6 @@ run = "npm run start"
 
 [nix]
 channel = "stable-21_11"
+
+[deployment]
+run = ["sh", "-c", "npm run start"]
